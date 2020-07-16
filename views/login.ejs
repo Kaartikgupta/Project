@@ -1,10 +1,33 @@
 <% include ./partials/header %> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ira Creations</title>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="/stylesheets/login.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-<h1>Login!</h1>
-<form action="/login" method="POST">
-    <input type="text" name="username" placeholder="username">
-    <input type="password" name="password" placeholder="password">
-    <input type="submit" value="Login!">
-</form>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+    </head>
+    <body>
+        <header>
+            <div class="loginbox">
+            
+                <h1>Login </h1>
+                <hr />
+                <form action="/login" method="POST">
+                    <!-- <p>Username</p> -->
+                    <input type="text" name="username" placeholder="Enter Username">
+                    <!-- <p>Password</p> -->
+                    <input type="password" name="password" placeholder="Enter Password">
+                    <!-- <input type="submit" value="Login"> -->
+                    <button>Login</button>
+                </form>
+            </div>
+        </header>
+    </body>
 
 <% include ./partials/footer %> 
